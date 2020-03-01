@@ -1,4 +1,4 @@
-Some parts of the schematic are based on schematics by Sergey Kiselev.
+Some parts of the schematic are based on other open-source schematics.
 
 FDC: http://www.malinov.com/Home/sergeys-projects/isa-fdc-and-uart
 
