@@ -25,7 +25,7 @@ WARNING: The following files can be flashed in-system with UFLASH.EXE, but you m
 Do not flash anything if the system is working as expected, if you don't have a programmer device handy in case you make a mistake.
 
 UFLASH can provide a delay before flashing, to allow switching to and flashing the other half of the System ROM while the system is running. This is useful if you wish to change the XT-IDE BIOS from V20 to 8088 type (the system will hang if you are using an 8088 and the V20-compatible XT-IDE BIOS is initialized).
-To add a delay of 30 seconds, add the following to the end of the command line: /t 30
+To add a delay of 30 seconds, add the following to the end of the command line: -t 30
 
 uFlash is Sergey's XiFlash tool, adapted by Aitor Gomez (https://github.com/spark2k06/micro_8088/tree/master/BIOS)
 
