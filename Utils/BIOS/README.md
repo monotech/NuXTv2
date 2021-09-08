@@ -98,8 +98,11 @@ NuXT 64K image - 8088 (098_8088.BIN)
 
 Note: When XT-IDE BIOS version R606 came out, a bug was fixed relating to incorrectly addressing small CF cards in CHS mode when they support LBA.
 NuXT v2.0 boards made before 2021, included XT-IDE BIOS version R602.
+
 As a consequence of the bug fix, CF cards formatted on an XT-IDE BIOS older than R606 will not be bootable in an R606 or later BIOS, and vice versa.
+
 If your CF card fails to boot, I recommend updating the XT-IDE BIOS version in all XT-IDE devices you own where you wish to swap the CF card between devices,
 and then reformat the CF cards to the new format.
+
 The easiest way to do this, is to backup the files off the card, then prepare it in a system with the updated XT-IDE BIOS, as per instructions for preparing
 a CF card, described in the NuXT v2.0 user manual.
