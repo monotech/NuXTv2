@@ -1,7 +1,7 @@
 These files are provided for repairing or updating the BIOS on your NuXT v2.0.
-They contain Sergey Kiselev's 8088_BIOS Version 0.9.9 (https://github.com/skiselev/8088_bios/tree/master)
+They contain Sergey Kiselev's 8088_BIOS Version 1.0.0 (https://github.com/skiselev/8088_bios/tree/master)
 
-It is recommended to update to 0.9.9 if you have floppy, keyboard, or VGA issues. 0.9.9 also adds a setting to disable RAM test. Full BIOS changelog in the above link.
+If you're still on 0.9.8, it is recommended to update if you have floppy, keyboard, or VGA issues. Full BIOS changelog in the above link.
 
 The NuXT has a 128K flash chip which is split into two halves,
 so you effectively have two System ROMs you can switch between with a DIP switch.
@@ -15,21 +15,21 @@ The 8088_BIOS is in both halves of the ROM.
 
 NuXT 128K image - Hybrid
 - Contains: V20-compatible XT-IDE BIOS in first half, and all-compatible in second half (selectable with DIP switch on NuXT).
-- SHA1: 038a63354d6cfa8168073e799ea8af20df4e1426
-- Last updated: 1st Feb 2023
-- Update reason: Update System BIOS to 0.9.9. Update XT-IDE BIOS to R624 (2nd Oct 2022).
+- SHA1: 9B879569DE69BEE228B5AA647782F70E36B6B9F2
+- Last updated: 15th Oct 2023
+- Update reason: Update System BIOS to 1.0.0. Update XT-IDE BIOS to R625.
 
 NuXT 128K image - V20
 - Contains: identical first and second half, with V20-compatible XT-IDE BIOS.
-- SHA1: 8E1C9443F87C8D11C8E5296D6EEA8F31F467077D
-- Last updated: 1st Feb 2023
-- Update reason: Update System BIOS to 0.9.9. Update XT-IDE BIOS to R624 (2nd Oct 2022).
+- SHA1: A57C18690BADD50BD16BD6D660D4BA6C0A2E633D
+- Last updated: 15th Oct 2023
+- Update reason: Update System BIOS to 1.0.0. Update XT-IDE BIOS to R625.
 
 NuXT 128K image - 8088
 - Contains: identical first and second half, with all-compatible XT-IDE BIOS.
-- SHA1: 6C28ECE74532675138A14BF5D2E0CB46DA7A2964
-- Last updated: 1st Feb 2023
-- Update reason: Update System BIOS to 0.9.9. Update XT-IDE BIOS to R624 (2nd Oct 2022).
+- SHA1: DB35A437BBE191022301DE2204A4618C97352FD7
+- Last updated: 15th Oct 2023
+- Update reason: Update System BIOS to 1.0.0. Update XT-IDE BIOS to R625.
 
 ***
 
@@ -51,12 +51,12 @@ uFlash is Sergey's XiFlash tool, adapted by Aitor Gomez to work on Micro 8088 an
 
 *** System BIOS ***
 
-NuXT System BIOS image (BIOS099.BIN)
+NuXT System BIOS image (BIOS100.BIN)
 - Bare Micro 8088 BIOS image by Sergey Kiselev
-- UFLASH Command: UFLASH -p -i BIOS099.BIN -a F800
-- SHA1: DC70FAD5C9B6D68D5FC806FA056FB55A5C4277A4
-- Last updated: 1st Feb 2023
-- Update reason: Updated to 0.9.9
+- UFLASH Command: UFLASH -p -i BIOS100.BIN -a F800
+- SHA1: FFFE0F7E8BF41041798BCAA097E4AE4213443AAD
+- Last updated: 15th Oct 2023
+- Update reason: Updated to 1.0.0
 
 ***
 
@@ -65,34 +65,34 @@ NuXT System BIOS image (BIOS099.BIN)
 XT-IDE BIOS image - V20-CPU-compatible (XTIDEV20.BIN)
 - Contains: V20-compatible XT-IDE BIOS, configured for the NuXTv2 - faster, but not compatible with 8088 CPU
 - UFLASH Command: UFLASH -p -i XTIDEV20.BIN -a F000
-- SHA1: 0198DE32E1733744B5E73F8473B1F8A485320933
-- Last updated: 1st Feb 2023
-- Update reason: Update XT-IDE BIOS to R624 (2nd Oct 2022).
+- SHA1: 4CF4C949BE002621024E3F60E53DBBC28A3D23DB
+- Last updated: 15th Oct 2023
+- Update reason: Update XT-IDE BIOS to R625.
 
 XT-IDE BIOS image - All-CPU-compatible (XTIDE88.BIN)
 - Contains: all-compatible XT-IDE BIOS, configured for the NuXTv2 - slower, but works with all CPUs
 - UFLASH Command: UFLASH -p -i XTIDE88.BIN -a F000
-- SHA1: A1CEDC4D9A5B128AD2006720E29148469C9A4FB5
-- Last updated: 1st Feb 2023
-- Update reason: Update XT-IDE BIOS to R624 (2nd Oct 2022).
+- SHA1: F8C894D0271CD0AFDA5E5BFD4FA0C8259BA0B445
+- Last updated: 15th Oct 2023
+- Update reason: Update XT-IDE BIOS to R625.
 
 ***
 
 *** Entire ROM (System BIOS and XT-IDE BIOS) ***
 
-NuXT 64K image - V20 (099_NV20.BIN)
+NuXT 64K image - V20 (100_NV20.BIN)
 - Contains: V20-compatible XT-IDE BIOS, configured for the NuXTv2 - faster, but not compatible with 8088 CPU
-- UFLASH Command: UFLASH -p -i 099_NV20.BIN -a F000
-- SHA1: FB39F4E32BCE4FDB0EAA4936938E94B33B531B82
-- Last updated: 1st Feb 2023
-- Update reason: Update System BIOS to 0.9.9. Update XT-IDE BIOS to R624 (2nd Oct 2022).
+- UFLASH Command: UFLASH -p -i 100_NV20.BIN -a F000
+- SHA1: A168930695BB7B718B2D3FEB7DCCC2142A1D7CB6
+- Last updated: 15th Oct 2023
+- Update reason: Update System BIOS to 1.0.0. Update XT-IDE BIOS to R625.
 
-NuXT 64K image - 8088 (099_8088.BIN)
+NuXT 64K image - 8088 (100_8088.BIN)
 - Contains: all-compatible XT-IDE BIOS, configured for the NuXTv2 - slower, but works with all CPUs
-- UFLASH Command: UFLASH -p -i 099_8088.BIN -a F000
-- SHA1: 75877D59FB84751B8D41E9D10C44F0431AB54B07
-- Last updated: 1st Feb 2023
-- Update reason: Update System BIOS to 0.9.9. Update XT-IDE BIOS to R624 (2nd Oct 2022).
+- UFLASH Command: UFLASH -p -i 100_8088.BIN -a F000
+- SHA1: EB0C98C1973DA51CCF6B3A80EAFF5AFA56A3DA4E
+- Last updated: 15th Oct 2023
+- Update reason: Update System BIOS to 1.0.0. Update XT-IDE BIOS to R625.
 
 ***
 
